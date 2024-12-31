@@ -126,9 +126,3 @@ if(NOT CMAKE_BUILD_TYPE MATCHES "Debug")
   install(FILES "${AOT_LIBRARY}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
     COMPONENT Runtime)
 endif()
-
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0 gstreamer-video-1.0)
-
-target_include_directories(${BINARY_NAME} PUBLIC ${GSTREAMER_INCLUDE_DIRS})
-target_link_libraries(${BINARY_NAME} PRIVATE ${GSTREAMER_LIBRARIES})
