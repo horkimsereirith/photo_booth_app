@@ -1,3 +1,11 @@
 {
-    "cmake.sourceDirectory": "/mnt/c/Projects/photo_booth_app/linux"
+    "cmake.sourceDirectory": "/mnt/c/Projects/photo_booth_app/linux",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
+    },
+    "dart.lineLength": 80, // Optional: Set the max line length
+    "editor.defaultFormatter": "dart-code.dart-code", // Use Dart formatter
+    "editor.formatOnSave": true, // Ensure files auto-format on save
+    "editor.formatOnPaste": true // Format pasted code
 }

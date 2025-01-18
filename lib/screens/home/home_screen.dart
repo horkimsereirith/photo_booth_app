@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:photo_booth_app/screen/configuration/configuration_screen.dart';
-import 'package:photo_booth_app/widget/app_bar_widget.dart';
+import 'package:photo_booth_app/screens/configuration/configuration_screen.dart';
+import 'package:photo_booth_app/widgets/app_bar_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.title});

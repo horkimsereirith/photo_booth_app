@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:photo_booth_app/screen/home/home_screen.dart';
+import 'package:photo_booth_app/providers/config_provider.dart';
+import 'package:photo_booth_app/screens/home/home_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => ConfigurationProvider())
+    ],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
